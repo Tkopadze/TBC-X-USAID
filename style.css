@@ -1,0 +1,808 @@
+:root {
+  --header-background-color: #1b1e1f;
+  --header-text-font: #f4f4f4;
+  --description-background-color: #2b2b2b;
+  --more-color: #4eabed;
+  --card-container-background-color: #161616;
+  --partners-section-background-color: #2b2b2b;
+  --terms-and-conditions-color: #dbdbdb;
+  --font_0: normal normal normal 24px/1.6em
+      wfont_643d94_dd28b3957391427eb54de1c9eff7cfb1,
+    wf_dd28b3957391427eb54de1c9e, orig_tbc_x_regular;
+  --card_border-color: #555555;
+  --font_11: normal normal normal 48px/1.6em
+      wfont_643d94_f52303b2efea42e1b4aeed119e42672e,
+    wf_f52303b2efea42e1b4aeed119, orig_tbc_x_black;
+  --border_color: #343131;
+  --button_background_color: #d5d5d5;
+  --footer_color: #1b1e1f;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--header-background-color);
+  height: 84px;
+  padding: 0 219px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImg {
+  width: 182px;
+  height: 40px;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.allTheQuestions {
+  color: var(--more-color);
+}
+
+.headerNav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.headerNav {
+  width: 410px;
+}
+.navTitles {
+  line-height: 26px;
+}
+.navTitles.active {
+  color: var(--more-color);
+}
+.headerNav li {
+  margin: 0px;
+  padding: 0px;
+}
+
+.headerNav a {
+  text-decoration: none;
+  color: var(--header-text-font);
+  margin: 0;
+  padding: 0 10px;
+  font-size: 14px;
+}
+.burger-menu .line {
+  display: none;
+  /* font-size: 24px;
+    color: var(--header-text-font);
+    cursor: pointer; */
+}
+.burger-content {
+  display: none;
+  width: 30%;
+  height: 100%;
+  background-color: var(--header-background-color);
+}
+footer button:hover {
+  background-color: var(--button_background_color);
+}
+
+.burger-navList {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  list-style: none;
+  padding-top: 50px;
+  margin: 0;
+  background-color: var(--header-background-color);
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.burger-navList li {
+  margin-bottom: 10px;
+}
+
+.burger-navList li a {
+  color: var(--header-text-font);
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+a:hover {
+  cursor: pointer;
+}
+.close-icon {
+  display: none;
+}
+
+/* Section styles */
+.sectionBanner {
+  background-image: url("https://static.wixstatic.com/media/93e8a3_9fa23196ddf6427a9da574e2b31a13d2~mv2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 352px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 20%;
+}
+
+h1 {
+  color: var(--header-text-font);
+  font-family: var(--font_11);
+  font-size: 41px;
+  font-weight: 900;
+  letter-spacing: -3px;
+}
+
+.bannerTittle2 {
+  width: 980px;
+  height: 138px;
+  font-size: 34px !important;
+}
+
+.description {
+  background-color: var(--description-background-color);
+  color: var(--header-text-font);
+  min-height: 464px;
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 20%;
+}
+
+.descText {
+  font-size: 28px;
+}
+
+.more {
+  color: var(--more-color);
+  font-size: 20px;
+  padding-top: 40px;
+}
+
+.cardSection {
+  background-color: var(--card-container-background-color);
+  height: auto;
+  padding: 0 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 30px;
+  gap: 20px;
+}
+
+.cardWrapperTitle {
+  color: var(--header-text-font);
+  font-family: var(--font_0);
+  font-weight: 200;
+}
+
+#cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 300px;
+  height: 414px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 2px var(--card_border-color) solid;
+  border-radius: 4px;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+}
+
+.card h2 {
+  font-weight: 200;
+  font-size: 18px;
+}
+
+.card p {
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.card h2,
+.card p {
+  color: var(--header-text-font);
+}
+
+.card .arrow {
+  width: 16px;
+  height: 13px;
+  padding-right: 5px;
+}
+
+#arrow {
+  fill: var(--more-color);
+}
+
+.card-content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 60%;
+  padding-left: 10px;
+  justify-content: space-evenly;
+}
+
+.card-content a {
+  display: flex;
+  margin-top: 10px;
+  text-decoration: none;
+  flex-direction: row;
+  align-items: center;
+}
+
+.content-link p {
+  font-size: 16px;
+  color: var(--more-color);
+}
+
+.partnersSection {
+  background-color: var(--partners-section-background-color);
+  width: 100%;
+  height: 363.4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.partnersSectTitle {
+  padding: 0 20%;
+  color: var(--header-text-font);
+  font-size: 24px;
+  font-weight: 300;
+  justify-self: flex-start;
+  margin-top: 30px;
+}
+
+.slider {
+  display: flex;
+  overflow: hidden;
+  width: 60%;
+}
+
+.slider-page {
+  flex: 0 0 100%;
+  width: 100%;
+}
+.page2Content,
+.page1Content {
+  min-width: max-content;
+  display: flex;
+  justify-content: space-between;
+}
+.page3Content {
+  display: flex;
+  justify-content: center;
+}
+.page2Component,
+.page1Component {
+  padding: 0 10px;
+}
+
+.slider-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.next {
+  width: 35px;
+  height: 40px;
+  background-image: url("./assets/next.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  transform: rotate(270deg);
+  background-color: var(--partners-section-background-color);
+}
+
+.previous {
+  width: 35px;
+  height: 40px;
+  background-image: url("./assets/next.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  transform: rotate(90deg);
+  background-color: var(--partners-section-background-color);
+}
+
+.PartnersLogo {
+  width: 270px;
+  height: 90px;
+}
+
+.partnersSliderWrapDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 224px;
+  justify-content: space-between;
+  padding: 0 2%;
+}
+
+.faq {
+  background-color: var(--card-container-background-color);
+  min-height: 484px;
+  display: flex;
+  flex-direction: column;
+  padding: 2% 20% 0 20%;
+  justify-content: space-around;
+  color: var(--header-text-font);
+}
+
+.faqItem {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 2px solid var(--border_color);
+  color: var(--header-text-font);
+}
+
+.questionDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.answer {
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faqItem.active .answer {
+  display: block;
+  max-height: 500px; /* Adjust as needed based on your content */
+}
+
+.faqWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  justify-content: space-evenly;
+}
+
+.toggleAnswerBtn {
+  background-image: url("./assets/previous.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 42px;
+  height: 42px;
+  background-color: var(--card-container-background-color);
+  border: none;
+  cursor: pointer;
+}
+
+.rotate-90 {
+  transform: rotate(180deg);
+  background-image: url("./assets/previous.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 42px;
+  height: 42px;
+  background-color: var(--card-container-background-color);
+  border: none;
+  cursor: pointer;
+}
+
+/* Add or modify styles as needed */
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%; /* Set the width as per your design */
+  background-color: var(--description-background-color);
+  color: var(--terms-and-conditions-color);
+  overflow-y: auto;
+  box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1); /* Add a box shadow for a visual separation */
+}
+
+.popup-content {
+  padding: 20px;
+}
+
+.close-btn {
+  background-color: var(--terms-and-conditions-color);
+  color: var(--description-background-color);
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  width: 100%; /* Make the button full width */
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: var(--footer_color);
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  padding: 0 20%;
+  justify-content: space-between;
+  height: 228px;
+  color: var(--header-text-font);
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.company img {
+  width: 106px;
+  height: 30px;
+}
+
+.company span {
+  display: flex;
+  flex-direction: column;
+}
+
+.socLogos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.socLogos img {
+  width: 39px;
+  height: 39px;
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.termsConditions {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact {
+  width: 162px;
+  height: 39px;
+  background-color: var(--more-color);
+  color: var(--header-text-font);
+  font-size: 16px;
+  border-radius: 7px;
+}
+
+#popupTrigger {
+  color: var(--terms-and-conditions-color);
+}
+
+@media only screen and (max-width: 1440px) {
+  header {
+    padding: 0 15%;
+  }
+  .PartnersLogo {
+    width: 200px;
+    height: 60px;
+  }
+
+  .sectionBanner {
+    padding: 0 15%;
+  }
+
+  .description {
+    padding: 0 15%;
+  }
+
+  .cardSection {
+    padding: 0 15%;
+  }
+
+  .faq {
+    padding: 2% 15% 0 15%;
+  }
+
+  .footer {
+    padding: 0 15%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    padding: 0 10%;
+  }
+
+  .card-content {
+    height: 40%;
+  }
+  .card {
+    width: 280px;
+    height: 290px;
+  }
+
+  .cardSection {
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+  }
+  #cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .sectionBanner {
+    padding: 0 10%;
+  }
+
+  .description {
+    padding: 0 10%;
+  }
+
+  .cardSection {
+    padding: 0 10%;
+  }
+
+  .faq {
+    padding: 2% 10% 0 10%;
+  }
+
+  .footer {
+    padding: 0 10%;
+  }
+  .page1Content,
+  .page2Content,
+  .page3Content {
+    gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  header {
+    padding: 0 5%;
+  }
+  .description {
+    padding: 8% 5%;
+  }
+  h1 {
+    font-size: 35px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .partnersSection {
+    align-items: center;
+  }
+  .headerNav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+    gap: 10px;
+    z-index: 10;
+    justify-self: flex-end;
+  }
+
+  .burger-menu .line {
+    display: flex;
+  }
+  .line2 {
+    width: 100%;
+    height: 3px;
+    border: 2px solid var(--header-text-font);
+    transition: transform 0.3s ease;
+  }
+  .line1 {
+    width: 50%;
+    height: 3px;
+    border: 2px solid var(--header-text-font);
+    transition: transform 0.3s ease;
+  }
+  .line3 {
+    width: 50%;
+    height: 3px;
+    border: 2px solid var(--header-text-font);
+    align-self: flex-end;
+    transition: transform 0.3s ease;
+  }
+
+  .burger-menu.active .line1 {
+    transform: rotate(-45deg);
+  }
+
+  .burger-menu.active .line2 {
+    transform: rotate(90deg);
+  }
+
+  .burger-menu.active .line3 {
+    transform: rotate(45deg);
+  }
+
+  .next {
+    display: none;
+  }
+  .previous {
+    display: none;
+  }
+  .navList {
+    display: none; /* Hide the regular navigation */
+  }
+
+  .partnersSection {
+    width: 100%;
+    min-height: 363.4px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: content-box;
+  }
+
+  .slider {
+    width: 100%;
+  }
+
+  .page1Content,
+  .page2Content,
+  .page3Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* .burger-menu {
+        position:absolute;
+        right: 20px;
+        top:10px;
+        display: block; 
+        z-index: 10;
+    } */
+  .headerNav ul {
+    display: none;
+  }
+  .sectionBanner {
+    padding: 0 5%;
+  }
+
+  .cardSection {
+    padding: 5% 0;
+  }
+
+  .faq {
+    padding: 2% 5% 0 5%;
+  }
+
+  .footer {
+    padding: 0 5%;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  header {
+    padding: 0 2%;
+  }
+  footer {
+    padding: 0px 10%;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .socLogos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding-left: 100px;
+  }
+  .contact {
+    width: 110px;
+    height: 35px;
+    font-size: 13px;
+  }
+  .rightSide {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+  .company span {
+    display: none;
+  }
+  #popupTrigger {
+    display: none;
+  }
+  .sectionBanner {
+    padding: 0 2%;
+  }
+
+  .description {
+    padding: 0 2%;
+  }
+
+  .cardSection {
+    padding: 0 2%;
+  }
+
+  .faq {
+    padding: 2% 2% 0 2%;
+  }
+
+  .footer {
+    padding: 0 2%;
+  }
+}
