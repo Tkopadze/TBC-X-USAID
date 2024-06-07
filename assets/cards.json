@@ -1,57 +1,58 @@
 [
-    {
-    "imageURL":"https://static.wixstatic.com/media/dd97f4_6f93a2a737b14a32ae26b17f51e6dbf1~mv2.jpg/v1/fill/w_600,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/dd97f4_6f93a2a737b14a32ae26b17f51e6dbf1~mv2.jpg",
-    "name":"iOS Development",
-    "desc":"რეგისტრაცია დასრულებულია",
-     "link":"https://www.tbcacademy.ge/usaid/ios-development"
-    },
-    {
-        "imageURL":"https://static.wixstatic.com/media/dd97f4_4323db1079614633a653e2ff9a95738e~mv2.jpg/v1/fill/w_600,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/dd97f4_4323db1079614633a653e2ff9a95738e~mv2.jpg",
-        "name":"React",
-        "desc":"რეგისტრაცია დასრულებულია",
-        "link":"https://www.tbcacademy.ge/usaid/react"
-    },
-    {
-        "imageURL":"https://static.wixstatic.com/media/dd97f4_5487da3fc590472dbb3599f7575df2d1~mv2.jpg/v1/fill/w_600,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/dd97f4_5487da3fc590472dbb3599f7575df2d1~mv2.jpg",
-        "name":"Intro to Python",
-        "desc":"რეგისტრაცია დასრულებულია",
-        "link":"https://www.tbcacademy.ge/usaid/python-basic"
-    },
-    {
-        "imageURL":"https://static.wixstatic.com/media/dd97f4_d9e4b267142542e98dbcdf183d766651~mv2.jpg/v1/fill/w_600,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/dd97f4_d9e4b267142542e98dbcdf183d766651~mv2.jpg",
-        "name":"Advanced Python",
-        "desc":"რეგისტრაცია დასრულებულია",
-        "link":"https://tbcacademy.ge/usaid/python-advance"
-    },
+  {
+    "imageURL": "https://static.wixstatic.com/media/dd97f4_0fc678e4e2e04f8dacc747a4e2fbb6e6~mv2.jpg/v1/fill/w_600,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/dd97f4_0fc678e4e2e04f8dacc747a4e2fbb6e6~mv2.jpg",
+    "name": "Blockchain",
+    "desc": "რეგისტრაცია გაიხსნება 10 ივნისს",
+    "link": "https://www.tbcacademy.ge/usaid/blockchain"
+  },
+  {
+    "imageURL": "https://static.wixstatic.com/media/dd97f4_8cc30cf0258d45a6ad2298ebec33550a~mv2.jpg/v1/fill/w_600,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/dd97f4_8cc30cf0258d45a6ad2298ebec33550a~mv2.jpg",
+    "name": "Information Security Governance",
+    "desc": "რეგისტრაცია გაიხსნება 10 ივნისს",
+    "link": "https://www.tbcacademy.ge/usaid/information-security-basic"
+  },
+  {
+    "imageURL": "https://static.wixstatic.com/media/dd97f4_41969c5f1e6b4a269bf1d790a52e465b~mv2.jpg/v1/fill/w_600,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/dd97f4_41969c5f1e6b4a269bf1d790a52e465b~mv2.jpg",
+    "name": "Advanced Cybersecurity Course",
+    "desc": "რეგისტრაცია გაიხსნება 10 ივნისს",
+    "link": "https://www.tbcacademy.ge/usaid/information-security-advance"
+  },
+  {
+    "imageURL": "https://static.wixstatic.com/media/dd97f4_dda966974c014319bd5623526510b47c~mv2.jpg/v1/fill/w_600,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/dd97f4_dda966974c014319bd5623526510b47c~mv2.jpg",
+    "name": "DevOps",
+    "desc": "რეგისტრაცია გაიხსნება 10 ივნისს",
+    "link": "https://www.tbcacademy.ge/usaid/devops"
+  },
+  {
+    "imageURL": "https://static.wixstatic.com/media/dd97f4_5487da3fc590472dbb3599f7575df2d1~mv2.jpg/v1/fill/w_600,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/dd97f4_5487da3fc590472dbb3599f7575df2d1~mv2.jpg",
+    "name": "Intro to Python",
+    "desc": "რეგისტრაცია გაიხსნება 24 ივნისს",
+    "link": "https://www.tbcacademy.ge/usaid/python-basic"
+  },
+  {
+    "imageURL": "https://static.wixstatic.com/media/dd97f4_4323db1079614633a653e2ff9a95738e~mv2.jpg/v1/fill/w_600,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/dd97f4_4323db1079614633a653e2ff9a95738e~mv2.jpg",
+    "name": "React",
+    "desc": "რეგისტრაცია გაიხსნება 24 ივნისს",
+    "link": "https://www.tbcacademy.ge/usaid/react"
+  },
 
-    {
-        "imageURL":"https://static.wixstatic.com/media/dd97f4_41969c5f1e6b4a269bf1d790a52e465b~mv2.jpg/v1/fill/w_600,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/dd97f4_41969c5f1e6b4a269bf1d790a52e465b~mv2.jpg",
-        "name":"Advanced Cybersecurity Course",
-        "desc":"რეგისტრაცია დასრულებულია",
-        "link":"https://www.tbcacademy.ge/usaid/information-security-advance"
-    },
-    {
-        "imageURL":"https://static.wixstatic.com/media/dd97f4_dd355dc915d14264afd4ce2a9d2b0e12~mv2.jpg/v1/fill/w_600,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/dd97f4_dd355dc915d14264afd4ce2a9d2b0e12~mv2.jpg",
-        "name":"ToT - Training of Trainers",
-        "desc":"რეგისტრაცია დასრულებულია",
-        "link":"https://www.tbcacademy.ge/usaid/training-of-trainers"
-    },
-    {
-        "imageURL":"https://static.wixstatic.com/media/dd97f4_0fc678e4e2e04f8dacc747a4e2fbb6e6~mv2.jpg/v1/fill/w_600,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/dd97f4_0fc678e4e2e04f8dacc747a4e2fbb6e6~mv2.jpg",
-        "name":"Blockchain",
-        "desc":"რეგისტრაცია დასრულებულია",
-        "link":"https://www.tbcacademy.ge/usaid/blockchain"
-    },
-    {
-        "imageURL":"https://static.wixstatic.com/media/dd97f4_dda966974c014319bd5623526510b47c~mv2.jpg/v1/fill/w_600,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/dd97f4_dda966974c014319bd5623526510b47c~mv2.jpg",
-        "name":"DevOps",
-        "desc":"რეგისტრაცია დასრულებულია",
-        "link":"https://www.tbcacademy.ge/usaid/devops"
-    },
-    {
-        "imageURL":"https://static.wixstatic.com/media/dd97f4_8cc30cf0258d45a6ad2298ebec33550a~mv2.jpg/v1/fill/w_600,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/dd97f4_8cc30cf0258d45a6ad2298ebec33550a~mv2.jpg",
-        "name":"Information Security Governance",
-        "desc":"რეგისტრაცია დასრულებულია",
-        "link":"https://www.tbcacademy.ge/usaid/information-security-basic"
-    }
+  {
+    "imageURL": "https://static.wixstatic.com/media/dd97f4_d9e4b267142542e98dbcdf183d766651~mv2.jpg/v1/fill/w_600,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/dd97f4_d9e4b267142542e98dbcdf183d766651~mv2.jpg",
+    "name": "Advanced Python",
+    "desc": "რეგისტრაცია გაიხსნება 24 ივნისს",
+    "link": "https://tbcacademy.ge/usaid/python-advance"
+  },
+  {
+    "imageURL": "https://static.wixstatic.com/media/dd97f4_6f93a2a737b14a32ae26b17f51e6dbf1~mv2.jpg/v1/fill/w_600,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/dd97f4_6f93a2a737b14a32ae26b17f51e6dbf1~mv2.jpg",
+    "name": "iOS Development",
+    "desc": "რეგისტრაცია გაიხსნება 24 ივნისს",
+    "link": "https://www.tbcacademy.ge/usaid/ios-development"
+  },
+
+  {
+    "imageURL": "https://static.wixstatic.com/media/dd97f4_dd355dc915d14264afd4ce2a9d2b0e12~mv2.jpg/v1/fill/w_600,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/dd97f4_dd355dc915d14264afd4ce2a9d2b0e12~mv2.jpg",
+    "name": "ToT - Training of Trainers",
+    "desc": "რეგისტრაცია გაიხსნება 24 ივნისს",
+    "link": "https://www.tbcacademy.ge/usaid/training-of-trainers"
+  }
 ]

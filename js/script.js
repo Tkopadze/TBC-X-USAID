@@ -68,7 +68,6 @@ function currentSlide(n) {
   showSlides((currentSlideIndex = n));
 }
 
-// Initialize the slider
 showSlides(currentSlideIndex);
 
 setInterval(function () {
@@ -78,14 +77,10 @@ setInterval(function () {
 function faqAnswer() {
   var faqWrapper = document.querySelector(".faqWrapper");
 
-  // Add click event listener to the FAQ wrapper
   faqWrapper.addEventListener("click", function (event) {
-    // Check if the clicked element is a toggle button
     if (event.target.classList.contains("toggleAnswerBtn")) {
-      // Find the parent FAQ item of the clicked button
       var faqItem = event.target.closest(".faqItem");
 
-      // Toggle the 'active' class on the FAQ item to show/hide the answer
       faqItem.classList.toggle("active");
     }
   });

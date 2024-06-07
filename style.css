@@ -67,10 +67,14 @@ header {
 .allTheQuestions {
   color: var(--more-color);
 }
-
+.allTheQuestions2 {
+  display: none;
+  color: var(--more-color);
+}
 .headerNav ul {
   list-style: none;
   display: flex;
+  justify-content: space-between;
   gap: 30px;
 }
 .headerNav {
@@ -79,7 +83,7 @@ header {
 .navTitles {
   line-height: 26px;
 }
-.navTitles.active {
+.navTitles .active {
   color: var(--more-color);
 }
 .headerNav li {
@@ -419,7 +423,8 @@ h1 {
 
 .faqItem.active .answer {
   display: block;
-  max-height: 500px; /* Adjust as needed based on your content */
+  max-height: 730px;
+  margin-bottom: 5%;
 }
 
 .faqWrapper {
@@ -541,6 +546,9 @@ footer {
   font-size: 16px;
   border-radius: 7px;
 }
+.section {
+  margin-top: 84px;
+}
 footer a .email-button {
   color: var(--header-text-font);
 }
@@ -550,14 +558,16 @@ footer a .email-button:hover {
 #popupTrigger {
   color: var(--terms-and-conditions-color);
 }
+.answer p {
+  text-align: initial;
+  box-sizing: border-box;
+}
 
 @media only screen and (max-width: 1440px) {
   header {
     padding: 0 15%;
   }
-  section {
-    padding-top: 84px;
-  }
+
   .PartnersLogo {
     width: 200px;
     height: 60px;
@@ -572,7 +582,7 @@ footer a .email-button:hover {
   }
 
   .cardSection {
-    padding: 0 15%;
+    padding: 2% 15%;
   }
 
   .faq {
@@ -580,28 +590,28 @@ footer a .email-button:hover {
   }
 
   .footer {
-    padding: 0 15%;
+    padding: 3% 15% 2.5%;
   }
 }
 
 @media only screen and (max-width: 1024px) {
   header {
-    padding: 0 10%;
+    padding: 0 2%;
   }
 
   .card-content {
     height: 40%;
   }
-  .card {
+  /* .card {
     width: 280px;
     height: 290px;
-  }
+  } */
 
   .cardSection {
-    padding: 0 10%;
+    padding: 2% 2%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
     padding-top: 20px;
   }
@@ -612,28 +622,44 @@ footer a .email-button:hover {
     gap: 10px;
   }
   .sectionBanner {
-    padding: 0 10%;
+    padding: 0 2%;
+  }
+  .questionDiv {
+    margin-bottom: 3%;
+  }
+  .description {
+    padding: 0 2%;
   }
 
-  .description {
-    padding: 0 10%;
+  .partnersSliderWrapDiv {
+    padding: 0 2%;
   }
 
   .cardSection {
-    padding: 0 10%;
+    padding: 2% 2%;
+  }
+  #cards-container {
+    justify-content: space-between;
+  }
+  .partnersSectTitle {
+    padding: 0;
   }
 
   .faq {
-    padding: 2% 10% 0 10%;
+    padding: 2% 5% 0;
   }
 
   .footer {
-    padding: 0 10%;
+    padding: 8% 2% 2.5%;
   }
   .page1Content,
   .page2Content,
   .page3Content {
     gap: 10px;
+  }
+  .toggleAnswerBtn {
+    width: 15px;
+    height: 15px;
   }
 }
 
@@ -654,19 +680,18 @@ footer a .email-button:hover {
   }
   .headerNav {
     display: flex;
-    justify-content: space-between;
+
+    justify-content: flex-end;
   }
 
   .burger-menu {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 50px;
     height: 20px;
     cursor: pointer;
     gap: 10px;
     z-index: 10;
-    justify-self: flex-end;
   }
 
   .burger-menu .line {
@@ -690,6 +715,9 @@ footer a .email-button:hover {
     border: 2px solid var(--header-text-font);
     align-self: flex-end;
     transition: transform 0.3s ease;
+  }
+  #cards-container {
+    justify-content: center;
   }
 
   .burger-menu.active .line1 {
@@ -719,7 +747,7 @@ footer a .email-button:hover {
     min-height: 363.4px;
     display: flex;
     flex-direction: column;
-    box-sizing: content-box;
+    box-sizing: border-box;
   }
 
   .slider {
@@ -734,13 +762,6 @@ footer a .email-button:hover {
     align-items: center;
   }
 
-  /* .burger-menu {
-        position:absolute;
-        right: 20px;
-        top:10px;
-        display: block; 
-        z-index: 10;
-    } */
   .headerNav ul {
     display: none;
   }
@@ -749,6 +770,7 @@ footer a .email-button:hover {
   }
 
   .cardSection {
+    align-items: center;
     padding: 5% 0;
   }
 
@@ -757,47 +779,18 @@ footer a .email-button:hover {
   }
 
   .footer {
-    padding: 0 5%;
+    padding: 3% 5% 2.5%;
+  }
+  .card {
+    width: 280px;
+    height: 311px;
   }
 }
-
 @media only screen and (max-width: 479px) {
   header {
     padding: 0 2%;
   }
-  footer {
-    padding: 0px 10%;
-  }
-  .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-  }
-  .socLogos {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    padding-left: 100px;
-  }
-  .contact {
-    width: 110px;
-    height: 35px;
-    font-size: 13px;
-  }
-  .rightSide {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: flex-end;
-  }
-  .company span {
-    display: none;
-  }
-  #popupTrigger {
-    display: none;
-  }
+
   .sectionBanner {
     padding: 0 2%;
   }
@@ -807,14 +800,157 @@ footer a .email-button:hover {
   }
 
   .cardSection {
-    padding: 0 2%;
+    padding: 2% 2%;
+  }
+  .partnersSectTitle {
+    font-size: 18px;
   }
 
   .faq {
     padding: 2% 2% 0 2%;
   }
-
+  .PartnersLogo {
+    max-width: 200px;
+    height: 60px;
+  }
+  .partnersSection {
+    height: 430px;
+    padding: 6% 0 2%;
+  }
+  .PartnersLogo {
+    width: 180px;
+    height: 51px;
+    margin: 9% 0;
+  }
+  .faqTitle {
+    font-size: 20px;
+    width: 60%;
+  }
+  .answer {
+    font-size: 14px;
+  }
+  .question {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 320px) {
   .footer {
-    padding: 0 2%;
+    height: 270px;
+    padding: 3% 6% 2.5%;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    text-align: center;
+    justify-items: start;
+  }
+
+  .company {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column: 2 / span 15;
+    grid-row: 2 / span 14;
+    height: 100%;
+  }
+
+  .tbcLogo {
+    grid-column: 1 / span 2; /* Starts from the 1st column and spans 2 columns */
+    grid-row: 1; /* First row */
+    margin-bottom: 10px; /* Adds space between logo and terms */
+  }
+
+  .termsConditions {
+    grid-column: 1 / span 5;
+    grid-row: 5;
+    margin-bottom: 10px;
+  }
+
+  #popupTrigger {
+    grid-column: 1 / span 3;
+    grid-row: 4;
+    margin-bottom: 10px;
+  }
+
+  .rightSide {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    grid-column: 2 / span 15;
+    grid-row: 5;
+  }
+
+  .logoImg {
+    width: 130px;
+    height: 29px;
+  }
+  .burger-menu {
+    width: 26px;
+    height: 15px;
+    gap: 5px;
+  }
+  h1 {
+    font-size: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    letter-spacing: 0.03px;
+  }
+  .line {
+    border: 1.5px solid var(--header-text-font);
+  }
+
+  .socLogos a {
+    margin: 0 5px;
+  }
+
+  .contact {
+    grid-column: 3 / span 3; /* Spans 3 columns from the 3rd column */
+    grid-row: 2; /* Second row */
+    margin-top: 10px; /* Adds space between social logos and contact button */
+  }
+  header {
+    padding: 0 6%;
+    height: 69px;
+  }
+
+  .sectionBanner {
+    padding: 0 6%;
+    height: 217px;
+  }
+
+  .description {
+    padding: 0 10%;
+    height: 477px;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: column;
+  }
+  .allTheQuestions2 {
+    font-size: 16px;
+    color: #4eabed;
+    display: block;
+  }
+  .allTheQuestions {
+    display: none;
+  }
+  .section {
+    margin-top: 69px;
+  }
+  .descText {
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: 0.001em;
+  }
+
+  .more {
+    font-size: 16px;
+  }
+  .cardSection {
+    padding: 2% 2%;
+  }
+
+  .faq {
+    padding: 2% 6% 0;
+    display: flex;
+    flex-direction: column;
   }
 }
