@@ -36,7 +36,7 @@ header {
   align-items: center;
   background-color: var(--header-background-color);
   height: 84px;
-  padding: 0 219px;
+  padding: 0 20% 0 20%;
   width: 100%;
   bottom: 0;
   left: 0;
@@ -55,13 +55,14 @@ header {
   width: 182px;
   height: 40px;
 }
-
-.title {
-  font-size: 1.5rem;
-  font-weight: bold;
+.TITLE {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 .allTheQuestions {
   color: var(--more-color);
@@ -73,7 +74,7 @@ header {
   gap: 30px;
 }
 .headerNav {
-  width: 410px;
+  width: 49%;
 }
 .navTitles {
   line-height: 26px;
@@ -107,6 +108,7 @@ header {
 }
 footer button:hover {
   background-color: var(--button_background_color);
+  color: black;
 }
 
 .burger-navList {
@@ -196,12 +198,12 @@ h1 {
 .cardSection {
   background-color: var(--card-container-background-color);
   height: auto;
-  padding: 0 20%;
+  padding: 2% 22%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding-top: 30px;
-  gap: 20px;
+
+  gap: 50px;
 }
 
 .cardWrapperTitle {
@@ -282,6 +284,8 @@ h1 {
 .partnersSection {
   background-color: var(--partners-section-background-color);
   width: 100%;
+  gap: 10%;
+  padding: 2%;
   height: 363.4px;
   display: flex;
   flex-direction: column;
@@ -293,13 +297,12 @@ h1 {
   font-size: 24px;
   font-weight: 300;
   justify-self: flex-start;
-  margin-top: 30px;
 }
 
 .slider {
   display: flex;
   overflow: hidden;
-  width: 60%;
+  width: 72%;
 }
 
 .slider-page {
@@ -327,8 +330,8 @@ h1 {
 }
 
 .dot {
-  height: 15px;
-  width: 15px;
+  height: 6px;
+  width: 6px;
   margin: 0 5px;
   background-color: #bbb;
   border-radius: 50%;
@@ -371,7 +374,7 @@ h1 {
   align-items: center;
   height: 224px;
   justify-content: space-between;
-  padding: 0 2%;
+  padding: 0 5%;
 }
 
 .faq {
@@ -380,7 +383,7 @@ h1 {
   display: flex;
   flex-direction: column;
   padding: 2% 20% 0 20%;
-  justify-content: space-around;
+  justify-content: space-evenly;
   color: var(--header-text-font);
 }
 
@@ -484,10 +487,10 @@ footer {
 .footer {
   display: flex;
   flex-direction: row;
-  padding: 0 20%;
   justify-content: space-between;
   height: 228px;
   color: var(--header-text-font);
+  padding: 3% 20% 2.5%;
 }
 
 .company {
@@ -509,6 +512,7 @@ footer {
 .socLogos {
   display: flex;
   flex-direction: row;
+  gap: 15px;
   align-items: center;
 }
 
@@ -537,7 +541,12 @@ footer {
   font-size: 16px;
   border-radius: 7px;
 }
-
+footer a .email-button {
+  color: var(--header-text-font);
+}
+footer a .email-button:hover {
+  color: var(--description-background-color);
+}
 #popupTrigger {
   color: var(--terms-and-conditions-color);
 }
@@ -545,6 +554,9 @@ footer {
 @media only screen and (max-width: 1440px) {
   header {
     padding: 0 15%;
+  }
+  section {
+    padding-top: 84px;
   }
   .PartnersLogo {
     width: 200px;
